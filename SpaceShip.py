@@ -18,7 +18,11 @@ print(df[["Age", "Destination"]].groupby("Destination").agg(["count"]))
 print(df[["Age", "VIP", "Destination"]].groupby("Destination").agg(["count"]))
 print(df[[ "VIP", "RoomService", "Destination", "ShoppingMall"]].groupby("VIP").agg(["count"]))
 
-#df.Destination = df.Destination.apply(lambda x: 1 if x == "55 Cancri e")
+#df.Destination = df.Destination.apply(lambda x: 1 if x == "55 Cancri e" else )
 print(df[[ "VIP", "RoomService", "Destination", "ShoppingMall"]].groupby("VIP").agg(["count"]))
+print(df.Destination.unique())
+print(df.Destination.value_counts(normalize=True))
+
 
 print(df.describe())
+print(pd.__version__)
